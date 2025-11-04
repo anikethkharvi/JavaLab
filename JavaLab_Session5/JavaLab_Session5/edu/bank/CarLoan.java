@@ -7,11 +7,12 @@ public class CarLoan implements Loan {
     @Override
     public void calculateEMI(double amount, int tenure) {
         double emi = (amount * rateOfInterest * tenure) / 100;
-        System.out.println("🚗 Car Loan EMI for " + tenure + " years: ₹" + emi);
+        System.out.println("Car Loan EMI for " + tenure + " years: ₹" + emi);
     }
 
     @Override
     public void displayLoanDetails() {
-        System.out.println("🚘 Car Loan with interest rate: " + rateOfInterest + "% per annum");
+        System.out.println("Car Loan with interest rate: " + rateOfInterest + "% per annum");
     }
 }
+
