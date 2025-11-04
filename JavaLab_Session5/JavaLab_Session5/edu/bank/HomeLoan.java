@@ -7,11 +7,12 @@ public class HomeLoan implements Loan {
     @Override
     public void calculateEMI(double amount, int tenure) {
         double emi = (amount * rateOfInterest * tenure) / 100;
-        System.out.println("🏡 Home Loan EMI for " + tenure + " years: ₹" + emi);
+        System.out.println("Home Loan EMI for " + tenure + " years: ₹" + emi);
     }
 
     @Override
     public void displayLoanDetails() {
-        System.out.println("🏠 Home Loan with interest rate: " + rateOfInterest + "% per annum");
+        System.out.println("Home Loan with interest rate: " + rateOfInterest + "% per annum");
     }
 }
+
