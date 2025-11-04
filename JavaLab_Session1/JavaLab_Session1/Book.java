@@ -16,7 +16,7 @@ class Book {
 
     // Method to display book details
     void displayDetails() {
-        System.out.println("📘 Book Details:");
+        System.out.println("Book Details:");
         System.out.println("Title  : " + this.title);
         System.out.println("Author : " + this.author);
         System.out.println("Price  : ₹" + this.price);
@@ -34,3 +34,4 @@ class Book {
         book2.displayDetails();
     }
 }
+
