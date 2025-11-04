@@ -6,7 +6,7 @@ public class BankDemo {
         // Using interface reference for polymorphism
         Loan loan;
 
-        System.out.println("=== 🏦 Banking Loan System ===");
+        System.out.println("=== Banking Loan System ===");
 
         loan = new HomeLoan();
         loan.displayLoanDetails();
@@ -19,3 +19,4 @@ public class BankDemo {
         loan.calculateEMI(300000, 5);
     }
 }
+
