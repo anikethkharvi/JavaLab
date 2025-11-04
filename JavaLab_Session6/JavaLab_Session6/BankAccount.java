@@ -14,9 +14,9 @@ public class BankAccount {
         System.out.println("\nProcessing withdrawal of ₹" + amount + "...");
         
         if (amount > balance) {
-            throw new LowBalanceException("❌ Insufficient funds! Withdrawal denied.");
+            throw new LowBalanceException("Insufficient funds! Withdrawal denied.");
         } else if (balance - amount < 1000) {  // Maintain minimum balance
-            throw new LowBalanceException("⚠️ Low balance! Minimum ₹1000 must be maintained.");
+            throw new LowBalanceException("Low balance! Minimum ₹1000 must be maintained.");
         } else {
             balance -= amount;
             System.out.println("✅ Withdrawal successful! Remaining balance: ₹" + balance);
@@ -29,3 +29,4 @@ public class BankAccount {
         System.out.println("💰 Current Balance: ₹" + balance);
     }
 }
+
