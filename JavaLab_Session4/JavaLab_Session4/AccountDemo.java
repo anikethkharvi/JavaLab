@@ -33,7 +33,7 @@ class SavingsAccount extends Account {
     void calculateInterest() {
         double interest = balance * interestRate;
         balance += interest;
-        System.out.println("💰 Interest (Savings Account): ₹" + interest);
+        System.out.println("Interest (Savings Account): ₹" + interest);
     }
 }
 
@@ -48,7 +48,7 @@ class CurrentAccount extends Account {
     @Override
     void calculateInterest() {
         balance -= serviceCharge;
-        System.out.println("💸 Service Charge (Current Account): ₹" + serviceCharge);
+        System.out.println("Service Charge (Current Account): ₹" + serviceCharge);
     }
 }
 
@@ -70,3 +70,4 @@ public class AccountDemo {
         acc2.displayBalance();
     }
 }
+
