@@ -13,7 +13,7 @@ class Vehicle {
 
     // Method to display vehicle info
     void displayInfo() {
-        System.out.println("🚗 Vehicle Brand: " + brand);
+        System.out.println("Vehicle Brand: " + brand);
         System.out.println("Top Speed: " + speed + " km/h");
     }
 }
@@ -73,3 +73,4 @@ public class VehicleDemo {
         e.displayInfo();
     }
 }
+
