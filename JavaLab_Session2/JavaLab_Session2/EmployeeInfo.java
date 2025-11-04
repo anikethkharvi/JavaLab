@@ -8,7 +8,7 @@ public class EmployeeInfo {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== 🧾 Employee Information System ===");
+        System.out.println("===  Employee Information System ===");
 
         // Accepting employee details using Scanner
         System.out.print("Enter Employee Name: ");
@@ -28,7 +28,7 @@ public class EmployeeInfo {
         String upperName = name.toUpperCase();
         String deptShort = department.substring(0, Math.min(3, department.length())).toUpperCase();
 
-        System.out.println("\n✅ Employee Record Created Successfully!");
+        System.out.println("\n Employee Record Created Successfully!");
         System.out.println("------------------------------------------");
         System.out.println("Employee Name (Uppercase): " + upperName);
         System.out.println("Employee ID              : " + empId);
@@ -38,7 +38,7 @@ public class EmployeeInfo {
 
         // Command-line Arguments for batch updates
         if (args.length > 0) {
-            System.out.println("\n📦 Batch Updates from Command-line Arguments:");
+            System.out.println("\n Batch Updates from Command-line Arguments:");
             for (int i = 0; i < args.length; i++) {
                 System.out.println("Update " + (i + 1) + ": " + args[i]);
             }
@@ -49,3 +49,4 @@ public class EmployeeInfo {
         sc.close();
     }
 }
+
